@@ -2,9 +2,7 @@
 
 Understanding and expressing your emotions should be simple, safe, and deeply personal. **Amore** is a full-stack mental wellness sanctuary that combines state-of-the-art AI with beautiful, empathetic design to help you reflect, heal, and grow.
 
-![Amore Preview](https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=2650&auto=format&fit=crop)
 
----
 
 ## ✨ Features that Matter
 
