@@ -1,0 +1,43 @@
+# ─── SECRETS & ENV ───
+.env
+.env*
+!.env.example
+ecosystem.config.js
+ecosystem.production.js
+list_models.py
+test_fix.py
+test_openrouter.py
+verify_models.py
+verify_env.py
+verify_backend_final.py
+debug_gemini_models.py
+test_*.py
+verify_*.py
+*.log
+.DS_Store
+
+# ─── UNIVERSAL IGNORES ───
+**/venv/
+**/node_modules/
+**/__pycache__/
+**/dist/
+**/build/
+**/*.pyc
+**/*.sqlite3
+**/*.db
+**/.ipynb_checkpoints/
+
+# ─── BACKEND SPECIFIC ───
+backend/db.sqlite3
+backend/chromadb_store/
+backend/media/
+backend/static/
+
+# ─── IDE & TOOLS ───
+.vscode/
+.idea/
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
