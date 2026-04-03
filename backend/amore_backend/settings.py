@@ -185,3 +185,6 @@ OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 
 # ChromaDB Context
 CHROMA_PATH = os.environ.get("CHROMA_PATH", "./chromadb_store")
+
+# Session Configuration
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True

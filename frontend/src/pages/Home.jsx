@@ -410,7 +410,8 @@ const Home = () => {
   const { user } = useAuthStore()
   const { isDark } = useThemeStore()
 
-  useEffect(() => { if (user) navigate('/dashboard') }, [user])
+  // Removed auto-redirect to allow users to see the landing page even if logged in
+  // useEffect(() => { if (user) navigate('/dashboard') }, [user])
 
   const blossoms = [
     { left: '5%', duration: 18, delay: 0 },
@@ -503,7 +504,7 @@ const Home = () => {
             transition={{ delay: 0.28 }}
             style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', alignItems: 'center' }}
           >
-            <Link to="/auth" style={{ textDecoration: 'none' }}>
+            <Link to={user ? "/dashboard" : "/auth"} style={{ textDecoration: 'none' }}>
               <motion.button
                 whileHover={{ opacity: 0.88, y: -1 }}
                 whileTap={{ scale: 0.98 }}
@@ -521,7 +522,7 @@ const Home = () => {
                   transition: 'all 0.25s ease',
                 }}
               >
-                Talk to Amore
+                {user ? "Go to Dashboard" : "Talk to Amore"}
               </motion.button>
             </Link>
 

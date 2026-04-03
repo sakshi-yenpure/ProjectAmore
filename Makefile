@@ -1,7 +1,11 @@
 # Amore Project Automation
 
 # Local Windows Development
-start-dev:
+cleanup-ports:
+	-powershell -Command "Stop-Process -Id (Get-NetTCPConnection -LocalPort 8000).OwningProcess -Force -ErrorAction SilentlyContinue"
+	-powershell -Command "Stop-Process -Id (Get-NetTCPConnection -LocalPort 5173).OwningProcess -Force -ErrorAction SilentlyContinue"
+
+start-dev: cleanup-ports
 	pm2 start ecosystem.config.js
 
 stop-dev:

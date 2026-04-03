@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { login as apiLogin, signup as apiSignup } from '../api/auth'
 
 const useAuthStore = create(
@@ -49,6 +49,7 @@ const useAuthStore = create(
     }),
     { 
       name: 'amore-auth',
+      storage: createJSONStorage(() => sessionStorage),
       partialize: (state) => ({ 
         user: state.user, 
         token: state.token, 

@@ -58,8 +58,8 @@ const DailyMoodCalendar = ({ entries = [] }) => {
         gap: '6px',
         textAlign: 'center'
       }}>
-        {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map(day => (
-          <span key={day} style={{ fontSize: '0.65rem', color: '#6B6B8A', fontWeight: 600, paddingBottom: '4px' }}>
+        {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, idx) => (
+          <span key={`weekday-${day}-${idx}`} style={{ fontSize: '0.65rem', color: '#6B6B8A', fontWeight: 600, paddingBottom: '4px' }}>
             {day}
           </span>
         ))}
@@ -73,7 +73,7 @@ const DailyMoodCalendar = ({ entries = [] }) => {
 
           return (
             <motion.div
-              key={day}
+              key={dateStr}
               whileHover={{ scale: 1.1 }}
               style={{
                 aspectRatio: '1/1',
