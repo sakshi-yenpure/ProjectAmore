@@ -16,11 +16,19 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            # Clone if not exists, else pull
+            if [ ! -d "${{ secrets.SERVER_PATH }}" ]; then
+              git clone https://github.com/sakshi-yenpure/ProjectAmore ${{ secrets.SERVER_PATH }}
+            fi
+
             cd ${{ secrets.SERVER_PATH }}
             git pull origin main
 
             # ── Backend ──
             cd backend
+            if [ ! -d "venv" ]; then
+              python3 -m venv venv
+            fi
             source venv/bin/activate
             pip install -r requirements.txt --quiet
             python manage.py migrate --no-input
