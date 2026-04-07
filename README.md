@@ -1,32 +1,32 @@
-# 🌸 Amore — Premium AI Emotional Wellness Platform
+#  Amore — Premium AI Emotional Wellness Platform
 
 Understanding and expressing your emotions should be simple, safe, and deeply personal. **Amore** is a full-stack mental wellness sanctuary that combines state-of-the-art AI with beautiful, empathetic design to help you reflect, heal, and grow.
 
 
 
-## ✨ Features that Matter
+##  Features that Matter
 
-### 🧠 Long-Term AI Memory
+###  Long-Term AI Memory
 Unlike standard chatbots, Amore **remembers**. Using a **ChromaDB Vector Store**, the AI recalls your past feelings, life events, and breakthroughs to provide context-aware, deeply personal support.
 
-### 🎭 Real-time Emotion Detection
+###  Real-time Emotion Detection
 Every word you type is analyzed by a local NLP engine to detect 8+ emotional states (Happy, Anxious, Sad, etc.). The interface dynamically adapts its colors and responses to meet you exactly where you are.
 
-### 🌿 Personalized Sanctuary
+###  Personalized Sanctuary
 Customizable **High-Definition Wallpapers** (Zen Forest, Dreamy clouds, etc.) and a premium **Glassmorphism UI** create a calming, distraction-free environment for your thoughts.
 
-### 📊 Wellness Dashboard
+###  Wellness Dashboard
 Track your emotional journey over weeks and months. Visualize your mood trends and patterns using interactive Recharts data visualization.
 
-### 👤 User Profile & Streaks
+###  User Profile & Streaks
 A dedicated profile page to manage your personal details and track your consistency with a visual daily mood calendar and journal streaks.
 
-### 🚀 Performance Optimized
+###  Performance Optimized
 Built with **Python Threading**, the app processes complex vector embeddings and AI titling in the background, ensuring you get near-instant responses (average latency < 3s).
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 - **Frontend**: React (Vite), Framer Motion, Zustand, Tailwind CSS, Recharts.
 - **Backend**: Django 4.2+, Django REST Framework, Daphne (ASGI).
@@ -38,7 +38,7 @@ Built with **Python Threading**, the app processes complex vector embeddings and
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone & Environment
 ```bash
@@ -78,10 +78,10 @@ npm run dev
 
 ---
 
-## 🔒 Privacy & Security
+##  Privacy & Security
 Amore is built with a **Security-First** approach.
 - **`.env` Protection**: API keys and secrets are strictly ignored by Git.
 - **Local Analysis**: Mood detection happens on your local server, keeping your raw sentiments private.
 
 ---
-Made with 🌸 for your wellbeing.
+
